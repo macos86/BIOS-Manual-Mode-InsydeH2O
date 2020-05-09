@@ -1,6 +1,6 @@
 ## Premessa:
 
-Procedi con cautela nel compiere le seguenti istruzioni. Questa è una guida per puro scopo educativo, non siamo responsabili qualora la procedura di modifica manuale dei settaggi tramite l'editor di variabili UEFI InsydeH2O vi renda inutilizzabile il PC per una vostra errata interpretazione di questa guida. 
+Procedere con cautela nel compiere le seguenti istruzioni. Questa è una guida per puro scopo educativo, non siamo responsabili qualora la procedura di modifica manuale dei settaggi tramite l'editor di variabili UEFI InsydeH2O vi renda inutilizzabile il PC per una vostra errata interpretazione di questa guida. 
 
 Qualora vogliate procedere, le responsabilità sono completamente vostre nei confronti del vostro hardware.
 
@@ -10,30 +10,30 @@ Si consiglia di entrare nella modalità Debug del bios se possibile, seguite que
 
 
 ## Step 0: Ottieni il tuo bios
-Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, in modo da ottenere un formato testuale dei settaggi del Bios. In questa guida chiameremo "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
+Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, in modo da ottenere un formato testuale dei settaggi del Bios. In questa guida chiameremo il formato testuale del BIOS come "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
 
 ## Step 1: Cerca la voce del valore che vuoi cambiare
 
-Segnati due valori che trovi in quella riga in cui risiede il nome del valore che vuoi cercare:
+Qui sarà importante segnarsi due valori che si trovano in quella riga in cui risiede il nome del valore che si vuole cercare:
 
 A. il valore dell'offset:
 
-ad esempio 
+ad esempio:
 
 `One Of: CFG Lock, VarStoreInfo (VarOffset/VarName): 0x3C`
 
 B. il valore della "VarStore", di solito appena adiacente:
 
-esempio:
+ad esempio:
 
 `VarStore: 0x3`
 
 ## Step 2: Trova il nome della sezione da estrarre
 
 
-Cerca sotto la sezione "Advanced" di "Bios.txt" la voce "VarStoreId: 0xqualcosa"
+Cerca sotto la sezione "Advanced" di "Bios.txt" la voce "VarStoreId: 0xnumerodelVarStore"
 
-con al posto di "qualcosa" metti il valore esadecimale vicino a "VarStore", quindi nel nostro caso 0x3.
+Sostituire al posto di "numerodelVarStore" il valore esadecimale vicino a "VarStore", quindi nel nostro caso 0x3.
 
 Ti servirà di segnarti il nome della sezione corrispondente in cui trovi "VarStoreid: 0xqualcosa", quindi nel nostro caso a Varstoreid 0x3 corrisponde il nome di una sezione.
 
