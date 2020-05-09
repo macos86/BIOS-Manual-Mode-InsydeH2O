@@ -1,7 +1,16 @@
+## Premessa:
+
+Procedi con cautela nel compiere le seguenti istruzioni. Questa è una guida per puro scopo educativo, non siamo responsabili qualora la procedura di modifica manuale dei settaggi tramite l'editor di variabili UEFI InsydeH2O vi renda inutilizzabile il PC per una vostra errata interpretazione di questa guida. 
+
+Qualora vogliate procedere, le responsabilità sono completamente vostre nei confronti del vostro hardware.
+
+Si consiglia di entrare nella modalità Debug del bios se possibile, seguite questo approccio solo in extremis.
+
+
 
 
 ## Step 0: Ottieni il tuo bios
-Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, così otterrai il file .txt del tuo bios. In questa guida chiameremo "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
+Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, in modo da ottenere un formato testuale dei settaggi del Bios. In questa guida chiameremo "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
 
 ## Step 1: Cerca la voce del valore che vuoi cambiare
 
