@@ -32,7 +32,7 @@ Se stai cercando nel tuo bios dov'è memorizzato l'offset del CFG Lock, molto pr
 
 Si ritiene necessario segnarsi questo "CpuSetup" insieme all'offset preso inizialmente (che non c'entra nulla con il VarStoreId, sono due valori diversi)
 
-## Step 4:
+## Step 3: estrai la sezione trovata in .txt
 
 Ora entra in ballo il .exe che viene dal pacchetto ufficiale di InsydeH2O. Aprite command Prompt come amministratore, dirigetevi nella cartella estratta e scrivete:
 
@@ -46,7 +46,7 @@ il tool ora tira fuori il file arbitrarionomesezione.txt dalla sezione CpuSetup 
 
 Duplicare questo file per avere un backup, rinominatelo in arbitrarionome2sezione.txt
 
-## Step 5: entra in gioco l'offset
+## Step 4: entra in gioco l'offset
 
 Vi ricordate che l'offset all'inizio era 0x3C?
 
@@ -56,7 +56,7 @@ Se andate a rivedervi il file .txt del bios, dove avete trovato l'offset del val
 
 Momento cuciale, cambiare quel 01 in 00, quindi state effettivamente cambiando quel valore che di default appunto era su 01, ossia abilitato. 
 
-## Step 6:
+## Step 5: caricare il .txt editato
 
 Ora serve ricaricare quel .txt nei settaggi del bios, per farlo serve un altro comando.
 
