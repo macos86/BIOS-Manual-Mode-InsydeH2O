@@ -14,7 +14,7 @@ Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, in modo da
 
 ## Step 1: Cerca la voce del valore che vuoi cambiare
 
-Qui sarà importante segnarsi due valori che si trovano in quella riga in cui risiede il nome del valore che si vuole cercare:
+Qui sarà importante segnarsi due valori che si trovano in quella riga in cui risiede il nome del settaggio BIOS desiderato (di solito nascosto dalla GUI e non accessibile dall'utente) che si vuole cercare:
 
 A. il valore dell'offset:
 
