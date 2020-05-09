@@ -4,9 +4,7 @@ Procedere con cautela nel compiere le seguenti istruzioni. Questa è una guida p
 
 Qualora vogliate procedere, le responsabilità sono completamente vostre nei confronti del vostro hardware.
 
-Si consiglia di entrare nella modalità Debug del bios se possibile, seguite questo approccio solo in extremis.
-
-
+Si consiglia di entrare nella modalità Debug del bios se possibile, oppure usare metodi come [setup_var](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock.html), questo approccio solo in extremis.
 
 
 ## Step 0: Ottieni il tuo bios
