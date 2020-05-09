@@ -70,4 +70,4 @@ quindi dopo che hai caricato il .txt modificato, al riavvio hai sbloccato il Cfg
 basta fare lo stesso identico procedimento cercando appunto quali siano i "VarStoreId" e andando a modificare la sezione in cui quel VarStoreId risiede e modificare il valore su ascissa e su ordinata in base al valore dell'offset.
 
 
-Scritta da A23SS4NDRO, credits 
+Scritta da A23SS4NDRO, credits [lietxia](https://github.com/lietxia)
