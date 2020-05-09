@@ -33,7 +33,7 @@ Cerca sotto la sezione "Advanced" di "Bios.txt" la voce "VarStoreId: 0xnumerodel
 
 Sostituire al posto di "numerodelVarStore" il valore esadecimale vicino a "VarStore", quindi nel nostro caso 0x3.
 
-Ti servirà di segnarti il nome della sezione corrispondente in cui trovi "VarStoreid: 0xqualcosa", quindi nel nostro caso a Varstoreid 0x3 corrisponde il nome di una sezione.
+Ti servirà di segnarti il nome della sezione corrispondente in cui trovi "VarStoreid: 0xnumerodelVarStore", quindi nel nostro caso a Varstoreid 0x3 corrisponde il nome di una sezione.
 
 Se stai cercando nel tuo bios dov'è memorizzato l'offset del CFG Lock, molto probabilmente dopo "VarStoreId: 0xqualcosa" troverai una sezione chiamata "CpuSetup", mentre se cerchi di trovare i valori di DVMT, la sezione dovrebbe chiamarsi "SaSetup"
 
