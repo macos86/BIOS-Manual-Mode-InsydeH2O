@@ -1,7 +1,7 @@
 
 
 ## Step 0: Ottieni il tuo bios
-Si ritiene necessrio estrarre il bios con UEFITool e con ifrextract, così otterrai il file .txt del tuo bios. In questa guida chiameremo "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
+Si ritiene necessario estrarre il bios con UEFITool e con ifrextract, così otterrai il file .txt del tuo bios. In questa guida chiameremo "Bios.txt" (su alcune guide tra cui quella di khronokernel viene convenzionalmente chiamato Setup.txt)
 
 ## Step 1: Cerca la voce del valore che vuoi cambiare
 
