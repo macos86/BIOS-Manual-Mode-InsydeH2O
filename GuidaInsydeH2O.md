@@ -28,7 +28,6 @@ ad esempio:
 
 ## Step 2: Trova il nome della sezione da estrarre
 
-
 Cerca sotto la sezione "Advanced" di "Bios.txt" la voce "VarStoreId: 0xnumerodelVarStore"
 
 Sostituire al posto di "numerodelVarStore" il valore esadecimale vicino a "VarStore", quindi nel nostro caso 0x3.
@@ -45,7 +44,7 @@ Ora entra in ballo il .exe che viene dal pacchetto ufficiale di InsydeH2O. Aprit
 
 `.\H2OUVE-W-CONSOLEx64.exe -gv arbitrarionomesezione.txt -n CpuSetup`
 
-Si raccomanda rispettare i caratteri case-sensitive di CpuSetup (o il nome della sezione che volete estrarre), inoltre il parametro "-gv" è possibile ricordarlo pensando a:
+Su alcune macchine, qualora questo eseguibile dovesse fallire a ottenere le variabili (in questo caso della sezione CpuSetup) richieste, è possibile provare ad eseguire preventivamente l'eseguibile `WDFInst.exe`, prima di avviare `H2OUVE-W-CONSOLEx64.exe`; si raccomanda inoltre rispettare i caratteri case-sensitive di CpuSetup (o il nome della sezione che volete estrarre). Il parametro "-gv" è possibile ricordarlo pensando a:
 
 `-gv = get variables.`
 
@@ -59,9 +58,9 @@ Vi ricordate che l'offset all'inizio era 0x3C?
 
 Andate a vedervi la tabella delle coppie di numeri che trovate nel file .txt che avete duplicato in arbitrarionome2sezione.txt e andate alla riga "0x30" (spesso espressa come 00000030, con zeri dietro) e alla colonna "0xC" ricordandovi appunto che C in esadecimale corrisponde a 12, ma fate attenzione, serve iniziare a contare dalla colonna zero, quindi dovrete andare alla colonna tredicesima (n+1)
 
-Se andate a rivedervi il file .txt del bios, dove avete trovato l'offset del valore, di solito ci sta anche scritto quale sia l'impostazione che il produttore ha impostato di default, nella maggior parte dei casi in cui deve essere sbloccato il cfg lock, questo valore corrisponde a 0x1 e quindi è altamente probabile che all'intersezione riga-colonna che ci da l'offset troveremo il valore 01.
+Se andate a rivedervi il file .txt del bios, dove avete trovato l'offset del valore, di solito ci sta anche scritto quale sia l'impostazione che il produttore ha impostato di default, nella maggior parte dei casi in cui deve essere sbloccato il CFG Lock, questo valore corrisponde a 0x1 e quindi è altamente probabile che all'intersezione riga-colonna che ci da l'offset troveremo il valore 01.
 
-Momento cuciale, cambiare quel 01 in 00, quindi state effettivamente cambiando quel valore che di default appunto era su 01, ossia abilitato. 
+Momento cruciale, cambiare quel 01 in 00, quindi state effettivamente cambiando quel valore che di default appunto era su 01, ossia abilitato. 
 
 ## Step 5: caricare il .txt editato
 
